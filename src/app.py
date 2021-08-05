@@ -24,7 +24,7 @@ app.layout = html.Div([
 
         html.H1('Vacunados por covid'),
         html.Img(src='../assets/COVID-19-outbreak-timeline.gif')
-    ], className = 'banner')
+    ], className = 'banner'),
 
     html.Div([
         html.Div([
