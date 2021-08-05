@@ -25,6 +25,22 @@ app.layout = html.Div([
         html.H1('Vacunados por covid'),
         html.Img(src='../assets/COVID-19-outbreak-timeline.gif')
     ], className = 'banner')
+
+    html.Div([
+        html.Div([
+            html.P('Selecione la real dosis', className = 'fix_label!!', style = {"color": "black", "margin-top": "2px"}),
+            dcc.RadioItems(
+
+                id = 'dosis-radioitems',
+                labelStyle = { 'display': 'inline-block'},
+                options = [
+
+                    { 'label': 'Primera dosis', 'value': 'primera_dosis_cantidad'},
+                    {  'label': 'Segunda dosis', 'value': 'segunda_dosis_cantidad'}
+                ]
+            )
+        ])
+    ])
 ])
 
 if __name__ == '__main__':
